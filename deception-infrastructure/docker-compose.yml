@@ -1,0 +1,28 @@
+services:
+  redis:
+    extends:
+      file: common-services.yml
+      service: redis_common
+  frontend:
+    extends:
+      file: common-services.yml
+      service: frontend_common
+    container_name: frontend
+  switchboard:
+    extends:
+      file: common-services.yml
+      service: switchboard_common
+    container_name: switchboard
+  nginx:
+    extends:
+      file: common-services.yml
+      service: nginx_common
+  mailpit:
+    image: axllent/mailpit
+    container_name: mailpit
+    restart: always
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+volumes:
+  log-volume:
