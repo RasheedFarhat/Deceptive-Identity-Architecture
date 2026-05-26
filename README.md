@@ -1,4 +1,4 @@
-# Zero-Trust-Deception-Fabric
+# Deceptive-Identity-Architecture
 A self-hosted, identity deception architecture integrating Authentik SSO with Canarytokens and automated threat telemetry
 # Zero-Trust Architecture: Identity Provisioning and Active Defense Telemetry
 
